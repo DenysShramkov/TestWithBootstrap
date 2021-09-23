@@ -1,0 +1,51 @@
+.vorteile {
+	background: #FBFBFC;
+	padding-top: 67px;
+	&__container {
+		display: grid;
+		grid-template-columns: repeat( auto-fill, 390px );
+		grid-auto-rows: 136px;
+		grid-gap: 8px 7px;
+		justify-content: center;
+		margin-top: 42px;
+	}
+
+	&__element {
+		display: flex;
+		background: #FFFFFF;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 16px;
+		align-items: center;
+	}
+
+	&__img {
+		width: 123px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		color: #020303;
+		font-size: 28px;
+		line-height: 40px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	&__descr {
+		font-size: 19px;
+		line-height: 32px;
+		color: #45494F;
+		width: 265px;
+	}
+}
+
+@media ( max-width: 575.98px ) {
+	.vorteile {
+		padding-top: 48px;
+		&__container {
+			grid-template-columns: repeat( auto-fill, 360px );
+		}
+	}
+}

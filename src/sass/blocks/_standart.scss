@@ -1,0 +1,65 @@
+.standarts {
+	height: 728px;
+	width: 100%;
+	display: grid;
+	grid-template: auto / 545px 1fr;
+	background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+	color: #FBFDFF;
+
+	&__content {
+		width: 500px;
+		justify-self: center;
+		align-self: center;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 40px;
+		font-weight: 700;
+	}
+
+	p {
+		margin-top: 22px;
+		font-size: 17px;
+		line-height: 32px;
+	}
+
+	span {
+		font-size: 17px;
+		line-height: 32px;
+		font-weight: 700;
+	}
+
+	&__img {
+		background: url(../img/ModernStandartBG.png) center (center/cover) no-repeat
+	}
+}
+
+@media ( max-width: 1199.98px ) {
+	.standarts {
+		height: max-content;
+		grid-template: auto / 400px 1fr;
+		&__content {
+			padding: 20px 0;
+		}
+	}
+}
+
+@media ( max-width: 991.98px ) {
+	.standarts {
+		grid-template: auto / 350px 1fr;
+
+		&__content {
+			width: 350px;
+		}
+	}
+}
+
+@media ( max-width: 767.98px ) {
+	.standarts {
+		grid-template: 505px auto / 100%;
+		&__content {
+			width: 90vw;
+		}
+	}
+}

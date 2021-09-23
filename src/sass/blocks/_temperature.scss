@@ -1,0 +1,61 @@
+.temperature {
+	min-height: 571px;
+	position: relative;
+	&__content {
+		width: 556px;
+		margin-top: 91px;
+	}
+
+	&__title {
+		color: #1652AC;
+		font-size: 20px;
+		line-height: 50px;
+		width: 426px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: #45494F;
+		font-size: 17px;
+		line-height: 32px;
+		margin-top: 32px;
+
+		span {
+			color: #45494F;
+			font-size: 17px;
+			line-height: 32px;
+			font-weight: 600;
+		}
+	}
+
+	&__element {
+		background: url(../img/IconHotToCold.png) center (center/cover) no-repeat;
+		height: 46vw;
+		width: 57vw;
+		position: absolute;
+		right: 0;
+		top: -10vw;
+		z-index: -1;
+	}
+}
+
+@media ( max-width: 767.98px ) {
+	.temperature {
+		&__element {
+			background-size: cover;
+			height: 50vw;
+			width: 140vw;
+			top: -10vw
+		}
+
+		.temperature__content {
+			width: 100%;
+			padding-top: 40vw;
+		}
+
+		.temperature__title {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,129 @@
+.carousel__section {
+	background: #FBFBFC;
+	padding-top: 74px;
+	padding-bottom: 185px;
+
+	.carousel__title {
+		text-align: center;
+		font-size: 28px;
+		line-height: 40px;
+		color: #020303;
+		font-weight: 700;
+	}
+
+	.carousel {
+		width: 610px;
+		height: 813px;
+		margin: 20px auto 0 auto;
+		.carousel-item {
+			img {
+				object-fit: cover;
+				object-position: center center;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		
+	}
+
+	.carousel-control-prev {
+		transform: rotate(180deg);
+	}
+
+	.carousel__controls {
+		display: flex;
+		align-items: flex-start;
+		margin-top: 29px;
+	}
+	.carousel-indicators {
+		position: relative;
+		display: inline-block;
+		margin-left: 53px;
+
+		button {
+			background: #80aaff35;
+			border: 1px solid #0045AC;
+			box-sizing: border-box;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			margin-right: 26px;
+		}
+		.active {
+			background: linear-gradient(180deg, #005BE4 0%, rgba(0, 96, 241, 0) 100%), #004FC7;
+		}
+	}
+
+}
+
+@media ( min-width: 768px ) {
+	.carousel__section {
+		.carousel-control-prev, .carousel-control-next {
+			position: static;
+			display: inline-block;
+			background-color: #fff;
+			opacity: 1;
+			box-shadow: 0px 0px 21px rgba(64, 68, 75, 0.14);
+			border-radius: 8px;
+			width: 126px;
+			height: 78px;
+			margin-right: 18px;
+	
+			.button-prev, .button-next {
+				display: inline-block;;
+				width: 40px;
+				height: 40px;
+				position: relative;
+			}
+	
+			.top, .bot {
+				position: absolute;
+				border: 2px solid rgba(0, 69, 203, 1);
+				width: 40px;
+				border-radius: 2px;
+			}
+			.top {
+				top: 0;
+				transform: rotate(30deg) translateY(10px);
+			}
+	
+			.bot {
+				bottom: 0;
+				transform: rotate(-30deg) translateY(-10px);
+			}
+	
+			&:hover {
+				.top {
+					box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+				}
+				
+				.bot {
+					box-shadow: -2px -4px 4px rgba(0, 0, 0, 0.25);
+				}
+				
+			}
+		}
+	}
+}
+
+@media ( max-width: 767.98px ) {
+	.carousel__section {
+		padding-top: 32px;
+		padding-bottom: 50px;
+
+		.carousel {
+			width: 100%;
+			height: auto;
+		}
+
+		.carousel__controls {
+			justify-content: center;
+		}
+
+		.carousel-indicators {
+			button {
+				margin: 0 20px;
+			}
+		}
+	}
+}
